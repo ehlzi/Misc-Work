@@ -1,0 +1,22 @@
+// intervals
+var start = 1;
+var end = 15;
+// constants
+var three = 3;
+var five = 5;
+var remainder = 0;
+// for-loop
+for (i; i <= end; i++) {
+  var threeB = i % three == remainder;
+  var fiveB = i % five == remainder;
+  var bothB = i % three == remainder && i % five == remainder;
+  if (bothB) {
+    console.log("FizzBuzz");
+  } else if (threeB) {
+    console.log("Fizz");
+  } else if (fiveB) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
